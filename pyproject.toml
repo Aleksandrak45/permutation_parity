@@ -1,0 +1,14 @@
+[project]
+name = "permutation-parity"
+version = "0.1.0"
+description = "Computes whether a permutation is even or odd by analyzing its cycle structure."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
