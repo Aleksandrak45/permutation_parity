@@ -1,6 +1,6 @@
 [project]
 name = "permutation-parity"
-version = "0.1.1"
+version = "0.1.2"
 description = "Computes whether a permutation is even or odd by analyzing its cycle structure."
 requires-python = ">=3.10"
 dependencies = []
