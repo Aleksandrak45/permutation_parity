@@ -20,3 +20,10 @@ Input is a 0-indexed permutation given in one-line notation: element `i` maps
 to `p[i]`.  One-indexed input is not supported; shift it yourself.  Only full
 permutations of `range(n)` are accepted — partial arrays, duplicates, or
 non-integer entries raise `PermutationError`.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
